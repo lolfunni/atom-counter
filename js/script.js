@@ -1,7 +1,11 @@
 function atomCounter(string) {
 	function brackets(regex, leftBracket, rightBracket){
 		let bracketMatched = string.match(regex);
-
+		let error = /([^A-Z]+|^)[a-z]/g;
+		if(string.match(error)){
+			string = '';
+			return;
+		}
 		if(bracketMatched){
 			for(let j = 0; j < bracketMatched.length; j++){
 				let isInt = bracketMatched[j].split(rightBracket);
