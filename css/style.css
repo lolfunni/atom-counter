@@ -99,3 +99,15 @@ body {
 		margin: -17%;
 	}
 }
+
+#header {
+	color: #1da7b5;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 12px;
+}
+
+#header a {
+	color: #7b543d;
+	text-decoration: none;
+}
