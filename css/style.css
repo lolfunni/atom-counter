@@ -1,0 +1,101 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f1c40f;
+	text-align: center;
+}
+
+.container {
+	margin: 5% 10% 0;
+	display: flex;
+}
+
+.image {
+	display: flex;
+	max-width: 50%;
+	flex-grow: 1;
+}
+
+.image img {
+	max-width: 100%;
+	object-fit: contain;
+	align-self: flex-start;
+}
+
+.content {
+	max-width: 50%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.content h1 {
+	font-family: 'Lobster Two', cursive;
+	font-size: 70px;
+	color: #1da7b5;
+	margin: 8% 0 0;
+}
+
+.content p {
+	color: #7b543d;
+}
+
+.content .example {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+
+.content .text {
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	border: 7px solid #1da7b5;
+	border-radius: 8px;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -ms-fit-content;
+}
+
+.content .text .formula {
+	background-color: #36bfc6;
+	height: 35px;
+	max-width: 260px;
+	border: none;
+	text-align: center;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content .text .send {
+	background-color: #1da7b5;
+	border: none;
+	font-size: 20px;
+	font-weight: 900;
+	color: #fff;
+	padding-left: 13px;
+}
+
+@media (max-width: 950px) {
+	
+	.content h1 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 700px) {
+	
+	.container {
+		flex-direction: column;
+	}
+	
+	.image {
+		margin-left: 5%;
+		max-width: 100%;
+	}
+	
+	.content {
+		align-self: center;
+		max-width: 100%;
+		margin: -17%;
+	}
+}
