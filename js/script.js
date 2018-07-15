@@ -72,7 +72,7 @@ function atomCounter(string) {
 			}
 			return sumOfAtomes;
 		} else {
-			return 'Something goes wrong :( Please, chceck your formula! Remember to use uppercase and lowercase appropriately';
+			return 'Please, chceck your formula! Remember to use uppercase and lowercase appropriately';
 		}
 	}
   
